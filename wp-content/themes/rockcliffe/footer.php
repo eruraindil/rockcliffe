@@ -13,7 +13,7 @@
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="row">
             <div class="col-md-4 text-left">
-                Email: <a href="mailto:jroberts@rockcliffebythesea.com">jroberts@rockcliffebythesea.com</a>
+                Email: <a href="mailto:droberts@rockcliffebythesea.com">droberts@rockcliffebythesea.com</a>
             </div>
             <div class="col-md-4 text-center">
                 <address>

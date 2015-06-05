@@ -16,6 +16,16 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-17598303-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -25,11 +35,16 @@
     <header id="masthead" class="site-header" role="banner">
         <div class="site-branding">
             <div class="container" id="site-header">
-                <h1 class="site-title sr-only"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                <img src="<?php echo get_template_directory_uri() ?>/images/rockcliffe-logo-trans.png" alt="Rockcliffe Logo" />
-                <div id="sm-icons" class="col-xs-3">
+              <div class="row">
+                <div class="col-sm-9">
+                  <h1 class="site-title sr-only"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <img id="logo" src="<?php echo get_template_directory_uri() ?>/images/rockcliffe-logo-trans.png" alt="Rockcliffe Logo" />
+                  </a>
+                </div>
+                <div id="sm-icons" class="col-sm-3 ">
                     <a href="tel:18006684337">1-800-66-TIDES</a><br>
-                    <a href="mailto:jroberts@rockcliffebythesea.com">jroberts@rockcliffebythesea.com</a><br>
+                    <a href="mailto:droberts@rockcliffebythesea.com">droberts@rockcliffebythesea.com</a><br>
                     <address>
                         118 Rockcliffe Dr. RR#2<br>
                         Parrsboro, Nova Scotia<br>
@@ -48,12 +63,13 @@
                             </a>
                         </div>
                         <div class="col-xs-4">
-                            <a href="http://rockcliffebythesea.com/blog/">
+                            <a href="/blog/">
                               <img src="<?php echo get_template_directory_uri() ?>/images/rss_50x50.png" alt="blog" class="img-responsive">
                             </a>
                         </div>
                     </div>
                 </div>
+              </div>
             </div>
         </div>
 

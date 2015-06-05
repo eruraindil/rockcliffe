@@ -73,7 +73,11 @@
 }
 
 #main-content {
-    background: #E6F0EB;
+  background: #E6F0EB;
+}
+
+#main {
+  margin-top: 15px;
 }
 
 a {color:#330066;}
@@ -86,6 +90,15 @@ h1 {
 
 h1.widget-title {
     font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  clear: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .alignleft {
@@ -135,4 +148,20 @@ h1.widget-title {
 .site-footer {
     color: #333;
     font-size:12px;
+}
+
+@media(max-width: 480px) {
+  #site-header {
+    text-align: center;
+    height: auto;
+  }
+  #sm-icons {
+    position: relative;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+  }
+  .site-footer * {
+    text-align: center!important;
+  }
 }

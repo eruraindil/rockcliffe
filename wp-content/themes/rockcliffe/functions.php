@@ -99,6 +99,15 @@ function rockcliffe_widgets_init() {
         'before_title'  => '<h1 class="widget-title">',
         'after_title'   => '</h1>',
     ) );
+    register_sidebar( array(
+        'name'          => __( 'Prices Sidebar', 'rockcliffe' ),
+        'id'            => 'sidebar-4',
+        'description'   => '',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title">',
+        'after_title'   => '</h1>',
+    ) );
 }
 add_action( 'widgets_init', 'rockcliffe_widgets_init' );
 
@@ -106,17 +115,23 @@ add_action( 'widgets_init', 'rockcliffe_widgets_init' );
  * Enqueue scripts and styles.
  */
 function rockcliffe_scripts() {
-    wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap-3.1.1/css/bootstrap.min.css');
+    wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap-3.3.4/css/bootstrap.min.css');
 
     //wp_enqueue_style( 'rockcliffe-style', get_stylesheet_uri() );
     wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/custom.css' );
+
+    wp_enqueue_style( 'slick-style', get_template_directory_uri() . '/slick/slick.css' );
+    //wp_enqueue_style( 'slick-style-theme', get_template_directory_uri() . '/slick/slick-theme.css' );
 
     wp_enqueue_script( 'rockcliffe-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
     wp_enqueue_script( 'rockcliffe-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-    //wp_enqueue_script( 'bootstrap-jquery', get_template_directory_uri() . '/bootstrap-3.1.1/js/jquery-1.11.1.min.js', array(), false, true );
-    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap-3.1.1/js/bootstrap.min.js', array(), false, true );
+    //wp_enqueue_script( 'bootstrap-jquery', get_template_directory_uri() . '/bootstrap-3.3.4/js/jquery-1.11.1.min.js', array(), false, true );
+    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap-3.3.4/js/bootstrap.min.js', array(), false, true );
+
+    wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/slick/slick.min.js', array(), false, true );
+    wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/script.js', array(), false, true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
