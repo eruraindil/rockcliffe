@@ -1,0 +1,137 @@
+* {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+body {
+	width:100%;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:1em;
+}
+
+#wrapper {
+	width:100%;
+	min-width:730px;
+}
+
+#header {
+	width:729px;
+	margin:0 auto;
+}
+
+#social-sites {
+	display:none;
+}
+
+#menu {
+	width:729px;
+	margin:0 auto;
+	border-bottom:1px solid #063;
+	font-size:0.6em;
+	color:#063;
+	overflow:visible;
+}
+
+#menu a, #curlink {
+	color:#063;
+	float:left;
+	padding:5px;
+}
+
+#main {
+	clear:left;
+	width:100%;
+	margin:1px 0 1px 0;
+}
+
+#main #sidebar {
+	width:25%;
+	padding:20px 0;
+	float:left;
+}
+#main #content {
+	width:74%;
+	padding:15px 1% 0 0;
+	float:left;
+}
+
+.attention {
+	font-weight:bold;
+	font-size:0.8em;
+	padding:10px 0;
+}
+
+#social, #social div {display:none;}
+
+#dl {display:none;}
+
+td {border:1px solid #063;}
+
+#footer {display:none;}
+
+#tail {
+	font-size:0.7em;
+	text-align:center;
+	width:100%;
+	border-top:1px solid #063;
+}	
+#tail table {
+	width:100%;
+	padding-bottom:12px;}
+#tail td {
+	width:33%;
+	vertical-align:bottom;
+	border:0 !important;}
+#tail #copyright {
+	font-family:serif;}
+
+a {color:#330066;}
+
+h1 {
+	font-size:1.2em;
+	font-family:"Crimson Text", serif;
+	color:#006633;
+	font-weight:bold;
+	padding-bottom:10px;
+	text-align:left;
+	}
+.splash {
+	color:#330066;
+	}
+
+h2 {
+	font-size:0.9em;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	font-weight:bold;
+	text-align:left;
+	}
+
+p {
+	text-align:left;
+	font-size:0.8em;
+	margin-bottom:15px;}
+	
+img.right, img.left {
+	border:3px #000 solid;
+	margin:5px;}
+
+img.right {
+	float:right;
+	clear:both;}
+	
+img.left {
+	float:left;
+	clear:both;}
+.note {font-size:0.6em;}
+
+ul {
+	margin-bottom:10px;
+}
+ul li {
+	font-size:0.8em;}
+input, textarea {
+	border:1px solid #CCC;
+	padding:2px;
+}
