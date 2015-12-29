@@ -13,12 +13,12 @@
 }
 
 #sm-icons {
-    position: absolute;
-    max-height: 250px;
+    /*position: absolute;*/
+    height: 250px;
     background: #8C6640;
     color: #eee;
-    bottom: 0;
-    right: 0;
+    /*bottom: 0;
+    right: 0;*/
     padding: 20px;
     word-break: break-all;
 }
@@ -78,6 +78,10 @@
 
 #main {
   margin-top: 15px;
+}
+
+.slick div {
+  position:absolute;
 }
 
 a {color:#330066;}
@@ -153,7 +157,6 @@ img {
 @media(max-width: 480px) {
   #site-header {
     text-align: center;
-    height: auto;
   }
   #sm-icons {
     position: relative;
