@@ -34,15 +34,17 @@
 
     <header id="masthead" class="site-header" role="banner">
         <div class="site-branding">
-          <!-- <div class="slick" style="display: none;">
-            <div>
-            <div><img src="<?php echo get_template_directory_uri() ?>/slider/beachcliff.jpg" alt="cliff face" /></div>
-            <div><img src="<?php echo get_template_directory_uri() ?>/slider/fiveislands.jpg" alt="cliff face" /></div>
-            <div><img src="<?php echo get_template_directory_uri() ?>/slider/oceanview.jpg" alt="cliff face" /></div>
-          </div> -->
             <div class="container" id="site-header">
               <div class="row">
                 <div class="col-sm-9">
+                  <div class="slick" style="display: none;">
+                    <div><img src="<?php echo get_template_directory_uri() ?>/slider/beachcliff.jpg" alt="cliff face" /></div>
+                    <div><img src="<?php echo get_template_directory_uri() ?>/slider/fiveislands.jpg" alt="cliff face" /></div>
+                    <div><img src="<?php echo get_template_directory_uri() ?>/slider/chipmunks.jpg" alt="cliff face" /></div>
+                    <div><img src="<?php echo get_template_directory_uri() ?>/slider/field-over-islands.jpg" alt="cliff face" /></div>
+                    <div><img src="<?php echo get_template_directory_uri() ?>/slider/oceanview.jpg" alt="cliff face" /></div>
+                    <div><img src="<?php echo get_template_directory_uri() ?>/slider/front-gate.jpg" alt="cliff face" /></div>
+                  </div>
                   <h1 class="site-title sr-only"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                     <img id="logo" src="<?php echo get_template_directory_uri() ?>/images/rockcliffe-logo-trans.png" alt="Rockcliffe Logo" />
