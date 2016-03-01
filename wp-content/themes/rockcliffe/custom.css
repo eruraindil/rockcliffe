@@ -3,24 +3,37 @@
 }
 
 #site-header {
-    background: url(images/header.jpg) no-repeat left top;
+    /*background: url(images/header.jpg) no-repeat left top;
     height:250px;
     position: relative;
-    -webkit-background-size: cover; /* For WebKit*/
-    -moz-background-size: cover;    /* Mozilla*/
-    -o-background-size: cover;      /* Opera*/
-    background-size: cover;
+    -webkit-background-size: cover;  For WebKit
+    -moz-background-size: cover;     Mozilla
+    -o-background-size: cover;       Opera
+    background-size: cover;*/
+}
+
+#header-title {
+  background-color:rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left:0;
+  top:0;
+  max-width: 100%;
+}
+
+#header-title img {
+  padding: 15px;
 }
 
 #sm-icons {
-    /*position: absolute;*/
-    height: 250px;
-    background: #8C6640;
-    color: #eee;
-    /*bottom: 0;
-    right: 0;*/
-    padding: 20px;
-    word-break: break-all;
+  /*position: absolute;*/
+  height: 300px;
+  background: #8C6640;
+  color: #eee;
+  /*bottom: 0;
+  right: 0;*/
+  padding: 20px;
+  word-break: break-all;
+  font-size: 1.2em;
 }
 
 #sm-icons a {
@@ -28,7 +41,8 @@
 }
 
 #sm-icons address {
-    margin-top:10px;
+  margin-top:10px;
+  white-space: pre-line;
 }
 
 #sm-icons .col-sm-6 a {
@@ -80,8 +94,59 @@
   margin-top: 15px;
 }
 
+.col-sm-9>.slick {
+  margin: 0 -15px;
+}
+
 .slick div {
   position:absolute;
+  height:300px;
+  position: relative;
+  -webkit-background-size: cover;  /*For WebKit*/
+  -moz-background-size: cover;     /*Mozilla*/
+  -o-background-size: cover;       /*Opera*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slick div:nth-child(1) {
+  background-image: url(slider/header.jpg);
+  background-position: left top;
+}
+
+.slick div:nth-child(2) {
+  background-image: url(slider/fiveislands.jpg);
+  background-position: center top;
+}
+
+.slick div:nth-child(3) {
+  background-image: url(slider/beachcliff.jpg);
+  background-position: left top;
+}
+
+.slick div:nth-child(4) {
+  background-image: url(slider/chipmunks.jpg);
+  background-position: left center;
+}
+
+.slick div:nth-child(5) {
+  background-image: url(slider/oceanview.jpg);
+  background-position: center top;
+}
+
+.slick div:nth-child(6) {
+  background-image: url(slider/front-gate.jpg);
+  background-position: center center;
+}
+
+.slick div:nth-child(7) {
+  background-image: url(slider/field-over-islands.jpg);
+  background-position: left top;
+}
+
+.slick div:nth-child(8) {
+  background-image: url(slider/beach-rock.jpg);
+  background-position: center center;
 }
 
 a {color:#330066;}
@@ -103,6 +168,10 @@ h1,h2,h3,h4,h5,h6 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+#main p:first-child {
+  font-size: 1.4em;
 }
 
 .alignleft {
@@ -156,6 +225,15 @@ img {
 
 @media(max-width: 480px) {
   #site-header {
+    text-align: center;
+  }
+  #header-title h1 {
+    text-align: center;
+  }
+
+  #header-title {
+    top: 60px;
+    width:100%;
     text-align: center;
   }
   #sm-icons {

@@ -38,26 +38,30 @@
               <div class="row">
                 <div class="col-sm-9">
                   <div class="slick" style="display: none;">
-                    <div><img src="<?php echo get_template_directory_uri() ?>/slider/beachcliff.jpg" alt="cliff face" /></div>
-                    <div><img src="<?php echo get_template_directory_uri() ?>/slider/fiveislands.jpg" alt="cliff face" /></div>
-                    <div><img src="<?php echo get_template_directory_uri() ?>/slider/chipmunks.jpg" alt="cliff face" /></div>
-                    <div><img src="<?php echo get_template_directory_uri() ?>/slider/field-over-islands.jpg" alt="cliff face" /></div>
-                    <div><img src="<?php echo get_template_directory_uri() ?>/slider/oceanview.jpg" alt="cliff face" /></div>
-                    <div><img src="<?php echo get_template_directory_uri() ?>/slider/front-gate.jpg" alt="cliff face" /></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                   </div>
-                  <h1 class="site-title sr-only"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                    <img id="logo" src="<?php echo get_template_directory_uri() ?>/images/rockcliffe-logo-trans.png" alt="Rockcliffe Logo" />
-                  </a>
+                  <div id="header-title">
+                    <h1 class="site-title sr-only"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                      <img id="logo" src="<?php echo get_template_directory_uri() ?>/images/rockcliffe-logo-trans.png" alt="Rockcliffe Logo" />
+                    </a>
+                  </div>
                 </div>
                 <div id="sm-icons" class="col-sm-3 ">
                     <a href="tel:18006684337">1-800-66-TIDES</a><br>
                     <a href="mailto:droberts@rockcliffebythesea.com">droberts@rockcliffebythesea.com</a><br>
-                    <address>
-                        118 Rockcliffe Dr. RR#2<br>
-                        Parrsboro, Nova Scotia<br>
+                    <a href="https://goo.gl/maps/LER96MR8TXx"><address>
+                        118 Rockcliffe Dr. RR#2
+                        Parrsboro, Nova Scotia
                         Canada  B0M 1S0
-                    </address>
+                    </address></a>
 
                     <div class="row">
                         <div class="col-xs-4">

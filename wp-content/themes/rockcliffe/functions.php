@@ -127,7 +127,7 @@ function rockcliffe_scripts() {
 
     wp_enqueue_script( 'rockcliffe-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-    //wp_enqueue_script( 'bootstrap-jquery', get_template_directory_uri() . '/bootstrap-3.3.4/js/jquery-1.11.1.min.js', array(), false, true );
+    wp_enqueue_script( 'bootstrap-jquery', get_template_directory_uri() . '/bootstrap-3.3.4/js/jquery-1.11.1.min.js', array(), false, true );
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap-3.3.4/js/bootstrap.min.js', array(), false, true );
 
     wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/slick/slick.min.js', array(), false, true );

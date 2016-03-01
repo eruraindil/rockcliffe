@@ -1,9 +1,10 @@
 jQuery(window).ready(function(){
   jQuery('.slick').show().slick({
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     arrows: false,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    pauseOnHover: false
   });
 });
