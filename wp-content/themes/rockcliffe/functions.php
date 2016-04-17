@@ -123,13 +123,10 @@ function rockcliffe_scripts() {
     wp_enqueue_style( 'slick-style', get_template_directory_uri() . '/slick/slick.css' );
     //wp_enqueue_style( 'slick-style-theme', get_template_directory_uri() . '/slick/slick-theme.css' );
 
+    //wp_enqueue_script( 'bootstrap-jquery', get_template_directory_uri() . '/bootstrap-3.3.4/js/jquery-1.11.1.min.js', array(), false, false );
     wp_enqueue_script( 'rockcliffe-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-
     wp_enqueue_script( 'rockcliffe-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-
-    wp_enqueue_script( 'bootstrap-jquery', get_template_directory_uri() . '/bootstrap-3.3.4/js/jquery-1.11.1.min.js', array(), false, true );
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap-3.3.4/js/bootstrap.min.js', array(), false, true );
-
     wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/slick/slick.min.js', array(), false, true );
     wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/script.js', array(), false, true );
 
